@@ -16,6 +16,7 @@ Learn Linux by building a practical system monitoring tool.
 - Current Shell
 - PATH Variable 
 - Running Processes
+- Storage Information
 
 
 ## Planned Features
@@ -34,7 +35,7 @@ Learn Linux by building a practical system monitoring tool.
 
 ## Version
 
-Current Version: 0.6
+Current Version: 0.7
 
 ## Status
 

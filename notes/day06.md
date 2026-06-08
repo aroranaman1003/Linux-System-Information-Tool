@@ -1,15 +1,15 @@
 # Day 6
 
-## Command Learned
+## Commands Learned
 
 ### lsblk
 
-Lists storage devices.
+Lists block devices in Linux.
 
-Example:
+### diskutil list
 
-lsblk
+macOS equivalent of lsblk.
 
 ## Project Connection
 
-lsblk → Storage Information
+Storage Informationn

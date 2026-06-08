@@ -54,9 +54,9 @@ print(result.stdout[:500])
 print("\nStorage Information:")
 
 result = subprocess.run(
-    ["lsblk"],
+    ["diskutil", "list"],
     capture_output=True,
     text=True
 )
 
-print(result.stdout)
+print(result.stdout[:1500])
