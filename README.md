@@ -9,11 +9,12 @@ Learn Linux by building a practical system monitoring tool.
 - Current User Information
 - Hostname Information
 - Current Working Directory
+- Operating System Information
+- Kernel Information
 
 ## Planned Features
 
-- OS Information
-- Kernel Information
+- User ID Information
 - Process Information
 - Environment Variables
 - CPU Usage
@@ -27,7 +28,7 @@ Learn Linux by building a practical system monitoring tool.
 
 ## Version
 
-Current Version: 0.2
+Current Version: 0.3
 
 ## Status
 
