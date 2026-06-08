@@ -3,6 +3,7 @@ import getpass
 import socket
 import platform
 import pwd
+import subprocess
 
 print("=================================")
 print("Linux System Information Tool")
@@ -30,3 +31,22 @@ user_info = pwd.getpwuid(os.getuid())
 print("Username:", user_info.pw_name)
 print("User ID:", os.getuid())
 print("Group ID:", os.getgid())
+
+print("\nHome Directory:")
+print(os.environ.get("HOME"))
+
+print("\nCurrent Shell:")
+print(os.environ.get("SHELL"))
+
+print("\nPATH Variable:")
+print(os.environ.get("PATH"))
+
+print("\nRunning Processes:")
+
+result = subprocess.run(
+    ["ps", "-e"],
+    capture_output=True,
+    text=True
+)
+
+print(result.stdout[:500])

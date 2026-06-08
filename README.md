@@ -12,6 +12,11 @@ Learn Linux by building a practical system monitoring tool.
 - Operating System Information
 - Kernel Information
 - User ID Information
+- Home Directory
+- Current Shell
+- PATH Variable 
+- Running Processes
+
 
 ## Planned Features
 
@@ -29,7 +34,7 @@ Learn Linux by building a practical system monitoring tool.
 
 ## Version
 
-Current Version: 0.4
+Current Version: 0.6
 
 ## Status
 
