@@ -11,6 +11,7 @@ Learn Linux by building a practical system monitoring tool.
 - Current Working Directory
 - Operating System Information
 - Kernel Information
+- User ID Information
 
 ## Planned Features
 
@@ -28,7 +29,7 @@ Learn Linux by building a practical system monitoring tool.
 
 ## Version
 
-Current Version: 0.3
+Current Version: 0.4
 
 ## Status
 
