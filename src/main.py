@@ -50,3 +50,13 @@ result = subprocess.run(
 )
 
 print(result.stdout[:500])
+
+print("\nStorage Information:")
+
+result = subprocess.run(
+    ["lsblk"],
+    capture_output=True,
+    text=True
+)
+
+print(result.stdout)
