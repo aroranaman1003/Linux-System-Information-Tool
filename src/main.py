@@ -71,3 +71,13 @@ result = subprocess.run(
 
 print(result.stdout[:1500])
 
+print("\n Active Network Connections:")
+
+result = subprocess.run(
+    ["netstat", "-an"],
+    capture_output=True,
+    text=True
+)
+
+print(result.stdout[:1500])
+

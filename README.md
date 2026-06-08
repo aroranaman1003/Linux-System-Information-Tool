@@ -18,6 +18,7 @@ Learn Linux by building a practical system monitoring tool.
 - Running Processes
 - Storage Information
 - Network Information
+- Active Network Connections
 
 
 ## Planned Features
@@ -36,7 +37,7 @@ Learn Linux by building a practical system monitoring tool.
 
 ## Version
 
-Current Version: 0.8
+Current Version: 0.9
 
 ## Status
 
