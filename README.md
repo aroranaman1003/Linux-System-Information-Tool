@@ -17,6 +17,7 @@ Learn Linux by building a practical system monitoring tool.
 - PATH Variable 
 - Running Processes
 - Storage Information
+- Network Information
 
 
 ## Planned Features

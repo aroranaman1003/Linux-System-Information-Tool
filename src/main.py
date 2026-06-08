@@ -60,3 +60,14 @@ result = subprocess.run(
 )
 
 print(result.stdout[:1500])
+
+print("\nNetwork information:")
+
+result = subprocess.run(
+    ["ifconfig"],
+    capture_output=True,
+    text=True
+)
+
+print(result.stdout[:1500])
+
