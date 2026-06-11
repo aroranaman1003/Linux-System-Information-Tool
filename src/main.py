@@ -115,6 +115,16 @@ def get_user_accounts():
 
     print(result.stdout[:1000])
 
+def get_group_info():
+    print("\nGroup Information:")
+
+    result = subprocess.run(
+        ["cat", "/etc/group"],
+        capture_output=True,
+        text=True
+    )
+
+    print(result.stdout[:1000])
 
 
 def main():
@@ -133,6 +143,7 @@ def main():
     get_active_connections()
     get_logged_in_users()
     get_user_accounts()
+    get_group_info()
 
 if __name__ == "__main__":
     main()
