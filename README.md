@@ -23,7 +23,7 @@ Learn Linux by building a practical system monitoring tool.
 - User Accounts Information
 - Group Information
 - Better User Enumeration 
-
+- Sudo Users Check 
 
 ## Planned Features
 

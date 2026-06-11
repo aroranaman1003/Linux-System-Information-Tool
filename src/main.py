@@ -137,6 +137,18 @@ def get_current_user_details():
 
     print(result.stdout)
 
+def get_sudo_information():
+    print("\nSudo Configuration:")
+
+    result = subprocess.run(
+        ["cat", "/etc/sudoers"],
+        capture_output=True,
+        text=True
+    )
+
+    print(result.stdout[:1000])
+
+
 def main():
     print("=================================")
     print("Linux System Information Tool")
@@ -155,6 +167,8 @@ def main():
     get_user_accounts()
     get_group_info()
     get_current_user_details()
+    get_sudo_information()
+
 
 if __name__ == "__main__":
     main()
