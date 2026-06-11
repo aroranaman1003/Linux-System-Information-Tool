@@ -81,3 +81,14 @@ result = subprocess.run(
 
 print(result.stdout[:1500])
 
+
+print("\nLogged In Users:")
+result = subprocess.run(
+    ["who"],
+    capture_output=True,
+    text=True
+)
+
+print(result.stdout)
+
+

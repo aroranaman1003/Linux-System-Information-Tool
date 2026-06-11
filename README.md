@@ -19,6 +19,7 @@ Learn Linux by building a practical system monitoring tool.
 - Storage Information
 - Network Information
 - Active Network Connections
+- Logged In Users
 
 
 ## Planned Features
@@ -37,7 +38,7 @@ Learn Linux by building a practical system monitoring tool.
 
 ## Version
 
-Current Version: 0.9
+Current Version: 1.0
 
 ## Status
 
