@@ -104,6 +104,18 @@ def get_logged_in_users():
 
     print(result.stdout)
 
+def get_user_accounts():
+    print("\nUser Accounts:")
+
+    result = subprocess.run(
+        ["cat", "/etc/passwd"],
+        capture_output=True,
+        text=True
+    )
+
+    print(result.stdout[:1000])
+
+
 
 def main():
     print("=================================")
@@ -120,7 +132,7 @@ def main():
     get_network_info()
     get_active_connections()
     get_logged_in_users()
-
+    get_user_accounts()
 
 if __name__ == "__main__":
     main()

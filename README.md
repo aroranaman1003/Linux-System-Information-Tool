@@ -20,6 +20,7 @@ Learn Linux by building a practical system monitoring tool.
 - Network Information
 - Active Network Connections
 - Logged In Users
+- User Accounts Information
 
 
 ## Planned Features
@@ -38,7 +39,7 @@ Learn Linux by building a practical system monitoring tool.
 
 ## Version
 
-Current Version: 1.0
+Current Version: 1.1
 
 ## Status
 
