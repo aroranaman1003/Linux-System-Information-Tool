@@ -126,6 +126,16 @@ def get_group_info():
 
     print(result.stdout[:1000])
 
+def get_current_user_details():
+    print("\nCurrent User Details:")
+
+    result = subprocess.run(
+        ["id"],
+        capture_output=True,
+        text=True
+    )
+
+    print(result.stdout)
 
 def main():
     print("=================================")
@@ -144,6 +154,7 @@ def main():
     get_logged_in_users()
     get_user_accounts()
     get_group_info()
+    get_current_user_details()
 
 if __name__ == "__main__":
     main()

@@ -22,6 +22,7 @@ Learn Linux by building a practical system monitoring tool.
 - Logged In Users
 - User Accounts Information
 - Group Information
+- Better User Enumeration 
 
 
 ## Planned Features
