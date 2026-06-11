@@ -23,7 +23,9 @@ Learn Linux by building a practical system monitoring tool.
 - User Accounts Information
 - Group Information
 - Better User Enumeration 
-- Sudo Users Check 
+- Sudo Users Check
+- Home Directory Analysis
+
 
 ## Planned Features
 
@@ -41,7 +43,7 @@ Learn Linux by building a practical system monitoring tool.
 
 ## Version
 
-Current Version: 1.4
+Current Version: 1.5
 
 ## Status
 

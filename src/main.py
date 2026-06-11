@@ -148,6 +148,17 @@ def get_sudo_information():
 
     print(result.stdout[:1000])
 
+def get_home_directory_files():
+    print("\nHome Directory Analysis:")
+
+    result = subprocess.run(
+        ["ls", "-al", os.path.expanduser("~")],
+        capture_output=True,
+        text=True
+    )
+
+    print(result.stdout[:1500])
+
 
 def main():
     print("=================================")
@@ -168,7 +179,7 @@ def main():
     get_group_info()
     get_current_user_details()
     get_sudo_information()
-
+    get_home_directory_files()
 
 if __name__ == "__main__":
     main()
