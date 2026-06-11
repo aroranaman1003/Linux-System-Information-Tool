@@ -41,7 +41,7 @@ Learn Linux by building a practical system monitoring tool.
 
 ## Version
 
-Current Version: 1.2
+Current Version: 1.4
 
 ## Status
 
