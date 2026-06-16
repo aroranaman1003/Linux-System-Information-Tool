@@ -25,7 +25,7 @@ Learn Linux by building a practical system monitoring tool.
 - Better User Enumeration 
 - Sudo Users Check
 - Home Directory Analysis
-
+- Package Manager Detection
 
 ## Planned Features
 
@@ -43,7 +43,7 @@ Learn Linux by building a practical system monitoring tool.
 
 ## Version
 
-Current Version: 1.5
+Current Version: 1.6
 
 ## Status
 

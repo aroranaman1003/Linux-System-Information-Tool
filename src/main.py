@@ -159,6 +159,20 @@ def get_home_directory_files():
 
     print(result.stdout[:1500])
 
+import shutil
+
+def check_package_managers():
+    managers = ["apt", "dpkg", "snap", "pip3", "brew"]
+
+    print("\nPackage Managers:")
+
+    for manager in managers:
+        if shutil.which(manager):
+            print(f"✓ {manager}")
+        else:
+            print(f"✗ {manager}")
+
+
 
 def main():
     print("=================================")
@@ -180,6 +194,7 @@ def main():
     get_current_user_details()
     get_sudo_information()
     get_home_directory_files()
+    check_package_managers()
 
 if __name__ == "__main__":
     main()
