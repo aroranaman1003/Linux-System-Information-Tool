@@ -173,6 +173,57 @@ def check_package_managers():
             print(f"✗ {manager}")
 
 
+def get_process_count():
+    print("\nProcess Statistics:")
+
+    result = subprocess.run(
+        ["ps", "-e"],
+        capture_output=True,
+        text=True
+    )
+
+    processes = result.stdout.strip().split("\n")
+
+    print("Total Processes:", len(processes) - 1)
+
+def search_process(process_name):
+    print(f"\nSearching for process: {process_name}")
+
+    result = subprocess.run(
+        ["ps", "-e"],
+        capture_output=True,
+        text=True
+    )
+
+    matches = []
+
+    for line in result.stdout.splitlines():
+        if process_name.lower() in line.lower():
+            matches.append(line)
+
+    if matches:
+        print("Found Processes:")
+        for process in matches[:10]:
+            print(process)
+    else:
+        print("No matching process found.")
+
+
+def get_top_processes():
+    print("\nTop Processes:")
+
+    result = subprocess.run(
+        ["ps", "-e"],
+        capture_output=True,
+        text=True
+    )
+
+    lines = result.stdout.splitlines()
+
+    for line in lines[:10]:
+        print(line)
+
+
 
 def main():
     print("=================================")
@@ -195,6 +246,10 @@ def main():
     get_sudo_information()
     get_home_directory_files()
     check_package_managers()
+    get_process_count()
+    processsearch=input("\nEnter the process name you want to search: ")
+    search_process(processsearch)
+    get_top_processes()
 
 if __name__ == "__main__":
     main()
