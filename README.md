@@ -10,52 +10,65 @@ Learn Linux by building a practical system monitoring and administration tool wh
 
 ### System Information
 
-* Current User Information
-* Hostname Information
-* Current Working Directory
-* Operating System Information
-* Kernel Information
+- Current User Information
+- Hostname Information
+- Current Working Directory
+- Operating System Information
+- Kernel Information
+
+---
 
 ### User Information
 
-* User ID Information
-* User Accounts Information
-* Group Information
-* Better User Enumeration
-* Sudo Users Check
+- User ID Information
+- User Accounts Information
+- Group Information
+- Better User Enumeration
+- Sudo Users Check
+
+---
 
 ### Environment Information
 
-* Home Directory
-* Current Shell
-* PATH Variable
-* Home Directory Analysis
+- Home Directory
+- Current Shell
+- PATH Environment Variable
+- Home Directory Analysis
+
+---
 
 ### Process Monitoring
 
-* Running Processes
-* Process Count
-* Process Search
-* Top Processes
+- Running Processes
+- Process Count
+- Process Search
+- Top Running Processes
+
+---
 
 ### Network Information
 
-* Network Information
-* Active Network Connections
+- Network Interfaces Information
+- Active Network Connections
+
+---
 
 ### Storage Information
 
-* Storage Information
+- Storage Information
+
+---
 
 ### Package Information
 
-* Package Manager Detection
+- Package Manager Detection
+
+---
 
 ### Login Information
 
-* Logged In Users
+- Logged In Users
 
----
 
 ## Linux Concepts Covered
 
@@ -69,6 +82,10 @@ Learn Linux by building a practical system monitoring and administration tool wh
 * Environment Variables
 * Networking Basics
 * Package Management
+* Process Monitoring
+* Process Management
+* Job Control
+* Linux Signals
 
 ---
 
@@ -100,7 +117,7 @@ Learn → Build → GitHub → Document
 
 ## Version
 
-Current Version: 1.8
+Current Version: 1.9
 
 ---
 
