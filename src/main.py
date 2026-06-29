@@ -224,32 +224,126 @@ def get_top_processes():
         print(line)
 
 
+def show_cpu_usage():
+    print("\nCPU Usage:")
+
+    result = subprocess.run(
+        ["top", "-l", "1"],
+        capture_output=True,
+        text=True
+    )
+
+    for line in result.stdout.splitlines():
+        if "CPU usage" in line:
+            print(line)
+            break
+
+
+def show_ram_usage():
+
+    print("\nRAM Usage:")
+
+    result = subprocess.run(
+        ["top", "-l", "1"],
+        capture_output=True,
+        text=True
+    )
+
+    for line in result.stdout.splitlines():
+
+        if "PhysMem" in line:
+
+            print(line)
+
+            break
+
+
+
+def show_disk_usage():
+
+    print("\nDisk Usage:")
+
+    result = subprocess.run(
+        ["df", "-h"],
+        capture_output=True,
+        text=True
+    )
+
+    print(result.stdout)
+
 
 def main():
+
     print("=================================")
     print("Linux System Information Tool")
-    print("Version 1.0")
+    print("Version 2.0")
     print("=================================")
+
+    # ==========================
+    # System Information
+    # ==========================
 
     get_basic_info()
     get_system_info()
+
+    # ==========================
+    # User Information
+    # ==========================
+
     get_user_id_info()
-    get_environment_info()
-    get_process_info()
-    get_storage_info()
-    get_network_info()
-    get_active_connections()
-    get_logged_in_users()
+    get_current_user_details()
     get_user_accounts()
     get_group_info()
-    get_current_user_details()
     get_sudo_information()
+
+    # ==========================
+    # Environment Information
+    # ==========================
+
+    get_environment_info()
     get_home_directory_files()
-    check_package_managers()
+
+    # ==========================
+    # Process Monitoring
+    # ==========================
+
+    get_process_info()
     get_process_count()
-    processsearch=input("\nEnter the process name you want to search: ")
-    search_process(processsearch)
     get_top_processes()
+
+    process_search = input(
+        "\nEnter the process name you want to search: "
+    )
+
+    search_process(process_search)
+
+    # ==========================
+    # System Monitoring
+    # ==========================
+
+    show_cpu_usage()
+    show_ram_usage()
+    show_disk_usage()
+
+    # ==========================
+    # Network Information
+    # ==========================
+
+    get_network_info()
+    get_active_connections()
+
+    # ==========================
+    # Login Information
+    # ==========================
+
+    get_logged_in_users()
+
+    # ==========================
+    # Package Information
+    # ==========================
+
+    check_package_managers()
+
 
 if __name__ == "__main__":
     main()
